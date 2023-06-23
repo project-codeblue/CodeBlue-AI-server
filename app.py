@@ -22,7 +22,7 @@ def getEmergencyLevel():
     print(sentence_received)
 
     # 기존 모델 불러오기
-    model = load_model('rnn_model_v3.h5')
+    model = load_model('rnn_model_v4.h5')
 
     # 토크나이저 불러오기
     with open('tokenizer.pkl', 'rb') as f:
