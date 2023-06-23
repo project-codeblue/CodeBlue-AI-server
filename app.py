@@ -11,7 +11,7 @@ okt = Okt()
 
 
 # 전처리용 상수
-MAX_LEN = 16
+MAX_LEN = 18
 stopwords = [',','.','의','로','을','가','이','은','들','는','성','좀','잘','걍','과','고','도','되','되어','되다','를','으로','자','에','와','한','합니다','입니다','있습니다','니다','하다','임','음','환자','응급','상황','상태','증상','증세','구조']
 
 
@@ -22,7 +22,7 @@ def getEmergencyLevel():
     print(sentence_received)
 
     # 기존 모델 불러오기
-    model = load_model('rnn_model_v4.h5')
+    model = load_model('rnn_model_v4_no_cum.h5')
 
     # 토크나이저 불러오기
     with open('tokenizer.pkl', 'rb') as f:
